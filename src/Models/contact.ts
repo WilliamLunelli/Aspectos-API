@@ -23,5 +23,3 @@ export const deleteContact = async (name: string) => {
     list = list.filter(item => item.toLowerCase() !== name.toLowerCase());
     await writeFile(dataSource, list.join('\n'));
 }
-
-
